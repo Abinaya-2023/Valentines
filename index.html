@@ -410,7 +410,8 @@ footer {
     🎹 Listen
   </button>
 
-  <audio id="favMusic" src="Nee Kavithaigala.mp3">
+  <audio id="music">
+    <source src="Nee Kavithaigala.mp3" type="audio/mpeg">
   </audio>
 </section>
 
@@ -465,29 +466,13 @@ footer {
   sections.forEach(section => observer.observe(section));
 </script>
 <script>
-  function toggleMusic(button) {
-    const music = document.getElementById("favMusic");
-
-    if (!music) {
-      alert("Audio file not found");
-      return;
-    }
-
-    if (music.paused) {
-      music.play().then(() => {
-        button.innerText = "🎶 Playing";
-      }).catch(err => {
-        alert("Tap again to allow audio");
-      });
-    } else {
-      music.pause();
-      music.currentTime = 0;
-      button.innerText = "🎹 Listen";
-    }
+  function playMusic() {
+    document.getElementById("music").play();
   }
 </script>
 
 </body>
 </html>
+
 
 
