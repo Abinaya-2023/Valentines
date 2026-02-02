@@ -464,7 +464,30 @@ footer {
 
   sections.forEach(section => observer.observe(section));
 </script>
+<script>
+  function toggleMusic(button) {
+    const music = document.getElementById("favMusic");
+
+    if (!music) {
+      alert("Audio file not found");
+      return;
+    }
+
+    if (music.paused) {
+      music.play().then(() => {
+        button.innerText = "🎶 Playing";
+      }).catch(err => {
+        alert("Tap again to allow audio");
+      });
+    } else {
+      music.pause();
+      music.currentTime = 0;
+      button.innerText = "🎹 Listen";
+    }
+  }
+</script>
 
 </body>
 </html>
+
 
