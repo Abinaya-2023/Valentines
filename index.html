@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This is a love story</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(
+    180deg,
+    #e6f2ff 0%,
+    #dceeff 50%,
+    #d2e9ff 100%
+  ); /* light blue romantic background */
+  color: #24364d;
+  line-height: 1.9;
+}
+    .voice-btn {
+  background: rgba(255,255,255,0.7);
+  padding: 18px;
+  border-radius: 50%;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.voice-btn:hover {
+  transform: scale(1.1);
+}
+
+
+    section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 70px 24px;
+  background: rgba(240, 248, 255, 0.95); /* very light blue card */
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+
+    h1, h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-weight: 600;
+  color: #2b4a6a;
+}
+
+    h1 { font-size: 2.3rem; }
+    h2 { font-size: 1.8rem; margin-bottom: 30px; }
+
+    .center { text-align: center; }
+
+    /* VIDEO */
+    video {
+      width: 100%;
+      max-width: 720px;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    /* LOVE NOTE */
+    .love-note {
+      max-width: 650px;
+      margin: auto;
+      text-align: left;
+      font-size: 1.05rem;
+    }
+    .love-note p { margin: 22px 0; }
+
+    /* MEMORY WALL */
+    .memory-wall {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .memory-wall img {
+      width: 100%;
+      border-radius: 22px;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+    }
+
+    /* VOICE CONVO */
+    .voice-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+
+    .memory-wall img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.memory-wall img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.9;
+}
+
+/* 🤎 FINAL COLOR OVERRIDE — BROWN + BEIGE */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    180deg,
+    #4b2e2b 0%,   /* deep brown */
+    #5c3a36 50%,
+    #6b433d 100%
+  ) !important;
+  color: #3b2b25;
+  overflow-x: hidden;
+}
+
+section {
+  background: rgba(245, 235, 220, 0.98) !important; /* soft beige */
+  border-radius: 30px;
+}
+
+
+section {
+  background: rgba(255, 230, 235, 0.97) !important; /* light pink */
+  border-radius: 30px;
+}
+
+section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 70px 24px;
+  border-radius: 30px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-weight: 600;
+  color: #3b2c5e;
+}
+.music-btn {
+  margin-top: 25px;
+  padding: 14px 38px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    #7a4a3c,
+    #9b6a4f
+  ); /* warm brown */
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(122, 74, 60, 0.45);
+}
+
+.music-btn:hover {
+  opacity: 0.92;
+}
+
+.letters a {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease;
+}
+
+.letters a:hover {
+  transform: scale(1.1);
+}
+
+
+section {
+  animation: fadeUp 0.9s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    audio { display: none; }
+
+    /* LOVE LETTERS */
+    .letters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 20px;
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+      font-size: 2.2rem;
+    }
+
+    .letters a {
+      text-decoration: none;
+    }
+
+    /* FINAL NOTE */
+    .final-note {
+      max-width: 650px;
+      margin: auto;
+      font-size: 1.1rem;
+      text-align: left;
+    }
+
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        margin: 50px 14px;
+        padding: 50px 18px;
+      }
+      h1 { font-size: 1.9rem; }
+      h2 { font-size: 1.5rem; }
+    }
+
+    @media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  section {
+    margin: 40px 14px;
+    padding: 45px 18px;
+    border-radius: 24px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  /* Video */
+  video {
+    max-width: 100%;
+    border-radius: 18px;
+  }
+
+  /* Love note */
+  .love-note {
+    font-size: 1rem;
+  }
+
+  /* Memory wall */
+  .memory-wall {
+    grid-template-columns: repeat(2, 1fr); /* side by side on phone */
+    gap: 12px;
+  }
+
+  /* Voice icons */
+  .voice-row {
+    font-size: 2.2rem;
+    gap: 28px;
+  }
+
+  /* Music button */
+  .music-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  /* Letters */
+  .letters {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+html, body {
+  overflow-x: hidden;
+}
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.hero-sub {
+  opacity: 0.75;
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  section {
+    margin: 40px 10px;   /* less side gap */
+    padding: 40px 14px;  /* tighter inside padding */
+  }
+}
+
+
+@media (max-width: 768px) {
+  section {
+    margin: 40px 10px;
+    padding: 40px 14px;
+  }
+}
+footer {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+  </style>
+</head>
+
+<body>
+
+<!-- OPENING -->
+<section class="hero center">
+  <h1>This is how you became my home 💕</h1>
+  <p class="hero-sub">Some stories don’t rush, they unfold.</p>
+
+  <video controls playsinline>
+    <source src="Super Schmoozed.mp4" type="video/mp4">
+  </video>
+</section>
+
+
+<!-- LOVE NOTE -->
+<section>
+  <div class="love-note">
+    <p>
+    Dearest Tanuj, <br>
+      I think one of the things that brought us closest is how we always had our little question and answer sessions. We asked, we listened, we thought and we tried to understand each other instead of running away from the conversation. It made me feel safe to speak my mind and it made me feel closer to you every single time.
+    </p>
+
+    <p>
+      Those conversations didn’t just pass time. They shaped us. They helped me see you more clearly and helped me understand myself too. I genuinely believe that talking like that is what pulled us closer, layer by layer.
+    </p>
+
+    <p>
+      I’m thankful for you. Truly. And I’m thankful to the universe for bringing you into my life when I didn’t even know I was ready for something this real. Somehow, you found your way to me and I’ll always be grateful for that.
+    </p>
+
+    <p>
+      Thank you for tolerating me. For my overthinking, my questions, my emotions, my softness and my chaos. Thank you for staying patient, for listening and for choosing to understand me instead of judging me.
+    </p>
+
+    <p>
+      Loving you feels honest. It feels safe. And it feels like something I want to keep choosing again and again. Love you loads 💕🫂
+    </p>
+  </div>
+</section>
+
+
+<!-- MEMORY WALL -->
+<section>
+  <h2>Wall of love</h2>
+  <div class="memory-wall">
+    <img src="1.jpeg"><img src="2.jpeg"><img src="3.jpeg"><img src="4.jpeg">
+    <img src="5.jpeg"><img src="6.jpeg"><img src="7.jpeg"><img src="8.jpeg">
+    <img src="9.jpeg"><img src="10.jpeg"><img src="11.jpeg"><img src="12.jpeg">
+  </div>
+</section>
+
+<!-- FIRST VOICE CONVO -->
+<section class="center">
+  <h2>Our first voice conversation</h2>
+
+  <div class="voice-row">
+  <span class="voice-btn" onclick="playAudio('sent')">🎤</span>
+  <span class="voice-btn" onclick="playAudio('received')">🎧</span>
+</div>
+
+
+  <audio id="sent" src="Me.mp3"></audio>
+  <audio id="received" src="Him.mp3"></audio>
+</section>
+
+<!-- FAVOURITE GIFT -->
+<section class="center">
+  <h2>My favourite gift</h2>
+  <p>When you played music for me.</p>
+
+  <button class="music-btn" onclick="playMusic()">
+    🎹 Listen
+  </button>
+
+  <audio id="favMusic">
+    <source src="Nee Kavithaigala.mp3" type="audio/mpeg">
+  </audio>
+</section>
+
+<!-- LOVE LETTERS -->
+<section>
+  <h2>Love letters</h2>
+
+  <div class="letters">
+    <a href="1.pdf" target="_blank">💌</a>
+    <a href="2.pdf" target="_blank">💌</a>
+    <a href="3.pdf" target="_blank">💌</a>
+    <a href="4.pdf" target="_blank">💌</a>
+    <a href="5.pdf" target="_blank">💌</a>
+    <a href="6.pdf" target="_blank">💌</a>
+    <a href="7.pdf" target="_blank">💌</a>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section>
+  <div class="final-note">
+    <p>You asked me to really think through the difficult parts, the uncertainty, the fears, the complications and decide whether I still want you despite all of it.</p>
+
+    <p>I did.</p>
+
+    <p>And yes, I still choose you. I love you to the moon and back 💕.</p>
+
+    <p>Lovingly,<br>Your 🐝</p>
+  </div>
+</section>
+
+<footer>
+  Bae 💕 & Bee 🐝
+</footer>
+
+<script>
+  function playAudio(id) {
+    document.getElementById(id).play();
+  }
+</script>
+<script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
